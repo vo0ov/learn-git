@@ -17,6 +17,9 @@ git diff HASH_COMMIT HASH_COMMIT # Разница между двумя комм
 git diff --staged # Последние изменения (После индексации)
 git clean -fd # Очистка неотслеживаемых файлов и директорий
 git restore --staged # Убирает файл из индексации
+git reset --hard HEAD~COUNT # Возвращает COUNT коммит (ОПАСНО)
+git reset HEAD~COUNT # Возвращает COUNT коммит c изменениями не в индексации (БЕЗОПАСНЕЕ --hard)
+git stash # Прячет текущую индексацию
 
 # git show BRANCH # Показывает историю изменений ветки
 ```
