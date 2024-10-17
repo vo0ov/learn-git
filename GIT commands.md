@@ -9,9 +9,12 @@ git rm FILE # Удаляет файл и добавляет в коммит
 git log # Лог коммитов
 git log --stat # Лог коммитов + изменения
 git log -p -2 # Разница между двумя последними коммитами
-it log --pretty=oneline # Лог коммитов в одну строку
+git log --pretty=oneline # Лог коммитов в одну строку
+git log --oneline # Лог коммитов в одну строку
 git log --since=2.weeks # Лог коммитов за 2 недели
 git diff # Последние изменения (До индексации)
+git diff HASH_COMMIT HASH_COMMIT # Разница между двумя коммитами
+git diff --staged # Последние изменения (После индексации)
 
 # git show BRANCH # Показывает историю изменений ветки
 ```
