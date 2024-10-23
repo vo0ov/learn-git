@@ -11,6 +11,11 @@
 7. git merge
 ```
 
+# Обозначения
+```bash
+HEAD - Последний коммит в ветке
+```
+
 ### Инициализация репозитория
 
 ```bash
@@ -110,6 +115,15 @@ git branch -f BRANCH
 
 git merge BRANCH
 # Объединяет ветку с именем BRANCH в текущую
+
+git rebase BRANCH_1 BRANCH_2
+# Объединяет ветку BRANCH_2 с BRANCH_1
+
+git branch -m BRANCH_BEFORE BRANCH_AFTER
+# Переменует ветку BRANCH_BEFORE в BRANCH_AFTER (Можно указать 1 аргумент у -m и текущая ветка переменуется)
+
+git branch -a
+# Выводит локальные ветки и все удалённые ветки.
 ```
 
 ### Сравнение изменений
