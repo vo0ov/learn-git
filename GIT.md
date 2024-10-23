@@ -175,3 +175,10 @@ git cat-file -p HASH
 git cat-file -p BRANCH^{tree}
 # Показывает содержимое дерева (снимка файловой системы) для указанной ветки
 ```
+
+### Github
+```bash
+git remote add origin HTTPS/SSH_URL # Добавляет удалённый репозиторий
+git branch -M main # Переключает на ветку main
+git push -u origin main # Добавляет ветку main в удалённый репозиторий (-u - для добавления в удалённый репозиторий)
+```
