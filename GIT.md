@@ -179,6 +179,10 @@ git cat-file -p BRANCH^{tree}
 ### Github
 ```bash
 git remote add origin HTTPS/SSH_URL # Добавляет удалённый репозиторий
-git branch -M main # Переключает на ветку main
-git push -u origin main # Добавляет ветку main в удалённый репозиторий (-u - для добавления в удалённый репозиторий)
+git branch -M main # Переменовывает masin в main
+git push -u origin BRANCH # -u origin BRANCH - куда пушить. Нужно указать 1 раз при соединении с GitHub
+git push # Загружает в GitHub
+git clone HTTPS/SSH_URL # Клонирует удалённый репозиторий
+git pull # Обновляет локальный репозиторий
+git pull --rebase # Обновляет локальный репозиторий в одной ветке
 ```
